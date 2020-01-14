@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CharacterComponent from '../CharacterComponent/Character.component';
+import CharacterComponent from '../CharacterComponent/CharacterBorderComponent/Character.component';
 
 import './gameWindow.css';
 

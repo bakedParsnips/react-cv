@@ -1,0 +1,11 @@
+#character-model{
+    background-image: url("./character-still.gif");
+    width: 132px;
+    margin: 0px;
+    height: 210px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 132px;
+    left: 960px;
+    top: 39px;
+}
