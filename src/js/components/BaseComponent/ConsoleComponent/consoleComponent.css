@@ -1,0 +1,33 @@
+#console-window{
+    width: 100vw;
+    height: 7vh;
+    background-color: #1b1b1b;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    box-shadow: inset 5px 5px 10px 0px rgba(0,0,0,0.2);
+}
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 521px }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .chat-animation{
+    position: absolute;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    display: block;
+    font-size: 13px;
+
+  }

@@ -1,0 +1,9 @@
+#game-window-container{
+    height: 72.6vh;
+    position: relative;
+    width: 100vw;
+    font-family: monospace;
+    background-color: rgb(219, 219, 219);
+    background-image: url('./pixel_bg_2_long.png');
+    background-position: -800px;
+}
