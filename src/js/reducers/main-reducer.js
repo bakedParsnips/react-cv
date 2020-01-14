@@ -1,13 +1,14 @@
 import * as ACTIONS from '../actions/actions';
+import OutputConsoleText from '../components/BaseComponent/ConsoleComponent/consoleText';
 
 const initialState = {
-    articles: []
+    consoleText: OutputConsoleText, 
 };
 
 function mainReducer(state = initialState, action) {
     if (action.type === ACTIONS.ADD_ARTICLE) {
         return Object.assign({}, state, {
-            articles: state.articles.concat(action.payload)
+            consoleText: state.consoleText.concat(action.payload)
         });
     }
     return state;

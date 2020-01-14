@@ -3,24 +3,19 @@ import OutputConsoleText from './consoleText.js';
 import './consoleComponent.css';
 import { connect } from "react-redux";
 
-const ConsoleComponent = ({articles}) => {
+const ConsoleComponent = ({consoleText}) => {
 
-    const [textOutput, setTextOutput] = useState(OutputConsoleText.welcomeText.textString);
+    const [textOutput, setTextOutput] = useState(consoleText.welcomeText.textString);
 
     return (
         <div>
             <div id="console-window"><div className="chat-animation">{textOutput}</div></div>
-            <ul>
-                {articles.map(el => (
-                    <li key={el.id}>{el.title}</li>
-                ))}
-            </ul>
         </div>
     )
 }
 
 const mapStateToProps = state => {
-    return { articles: state.articles }
+    return { consoleText: state.consoleText }
 };
 
 
