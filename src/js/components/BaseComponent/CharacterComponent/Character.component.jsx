@@ -9,7 +9,7 @@ const mystyle = {
 const CharacterComponent = () => {
 
     return (
-        <div id="character-base" style={mystyle}></div>
+        <div id="character-base" class="base" style={mystyle}></div>
     )
 }
 
