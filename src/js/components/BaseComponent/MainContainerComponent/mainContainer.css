@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 #main-container {
     padding: 100px 0px;
     height: -webkit-fill-available;
